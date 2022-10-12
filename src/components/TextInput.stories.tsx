@@ -30,3 +30,12 @@ export default {
 } as ComponentMeta<typeof TextInput['Root']>
 
 export const Default: ComponentStoryObj<typeof TextInput['Root']> = {}
+export const WithoutIcon: ComponentStoryObj<typeof TextInput['Root']> = {
+  args: {
+    children: (
+      <TextInput.Input 
+        placeholder='Type your e-mail address'
+      />
+    )
+  }
+};
