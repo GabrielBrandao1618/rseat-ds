@@ -15,6 +15,11 @@ export default {
       control: {
         type: 'inline-radio'
       }
+    },
+    asChild: {
+      table: {
+        disable: true
+      }
     }
   }
 } as ComponentMeta<typeof Heading>
@@ -41,11 +46,6 @@ export const CustomComponent: ComponentStoryObj<typeof Heading> = {
   },
   argTypes: {
     children: {
-      table: {
-        disable: true
-      }
-    },
-    asChild: {
       table: {
         disable: true
       }

@@ -8,6 +8,13 @@ export default {
   args: {
     children: 'Create account',
   },
+  argTypes: {
+    asChild: {
+      table: {
+        disable: true
+      }
+    }
+  },
 } as ComponentMeta<typeof Button>
 
 export const Default: ComponentStoryObj<typeof Button> = {}

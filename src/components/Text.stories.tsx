@@ -15,6 +15,11 @@ export default {
       control: {
         type: 'inline-radio'
       }
+    },
+    asChild: {
+      table: {
+        disable: true
+      }
     }
   }
 } as ComponentMeta<typeof Text>
@@ -41,11 +46,6 @@ export const CustomComponent: ComponentStoryObj<typeof Text> = {
   },
   argTypes: {
     children: {
-      table: {
-        disable: true
-      }
-    },
-    asChild: {
       table: {
         disable: true
       }
