@@ -10,7 +10,7 @@ function TextInputRoot({children}:TextInputRootProps){
   return (
     <div
       className={clsx(
-        'py-4 px-3 rounded w-full flex items-center gap-3 bg-gray-800  focus-within:ring-2 ring-cyan-300'
+        'py-4 px-3 rounded w-full flex items-center gap-3 bg-gray-800  focus-within:ring-2 ring-cyan-300 h-12'
       )}
     >
       {children}
