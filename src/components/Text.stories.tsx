@@ -1,13 +1,21 @@
 import type {ComponentMeta, ComponentStoryObj} from '@storybook/react';
 
-import {Text} from './Text';
+import {Text, type TextProps} from './Text';
 
 export default {
   title: 'Components/Text',
   component: Text,
   args: {
     children: 'Button',
-    size: 'lg'
+    size: 'md'
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md', 'lg'] as TextProps['size'][],
+      control: {
+        type: 'inline-radio'
+      }
+    }
   }
 } as ComponentMeta<typeof Text>
 
@@ -30,5 +38,12 @@ export const CustomComponent: ComponentStoryObj<typeof Text> = {
     children: (
       <p>Teste</p>
     )
+  },
+  argTypes: {
+    children: {
+      table: {
+        disable: true
+      }
+    }
   }
 };
